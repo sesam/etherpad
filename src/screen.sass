@@ -1,0 +1,37 @@
+@import compass/reset.sass
+@import compass/utilities/general/clearfix.sass
+@import 960/grid.sass
+@import text.sass
+@import theme.sass
+
+*:focus
+  outline: #ccc dotted medium
+
+#container
+  +grid-container
+  +clearfix
+  
+  #top
+    #title
+      +grid(4,12)
+      
+    #menu
+      +grid(8,12)
+
+  #overview
+    +grid(7,12)
+
+  #features
+    +grid(5,12)
+
+  #download
+    +grid(12,12)
+  
+  #etherpad-is
+    +grid(4,12)
+
+  #using-etherpad
+    +grid(4,12)
+
+  #licensing
+    +grid(4,12)

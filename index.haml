@@ -36,43 +36,44 @@
               %a{ :href => "http://live.etherpad.org/" }
                 Live!
         
-      #overview     
-        %object.flashvideo{ :data => "http://www.youtube.com/v/JpbT5H6-qr8", :type => "application/x-shockwave-flash" }
-          %param{ :name => "movie", :value => "http://www.youtube.com/v/JpbT5H6-qr8" }
+      #content
+        #overview     
+          %object.flashvideo{ :data => "http://www.youtube.com/v/JpbT5H6-qr8", :type => "application/x-shockwave-flash" }
+            %param{ :name => "movie", :value => "http://www.youtube.com/v/JpbT5H6-qr8" }
         
-      #features
-        %h2 Features...
-        %ul
-          %li Realtime collaboration - Changes show up simultaneusly on all participants screens.
-          %li Color-coded edits - You can easily see who changed which part of the text.
-          %li Infinite undo - No limit to how far back in history you can go and rescue an old version of a text.
-          %li Extensible - You can easily change and extend the software with modules adding extra functionality.
+        #features
+          %h2 Features...
+          %ul
+            %li Realtime collaboration - Changes show up simultaneusly on all participants screens.
+            %li Color-coded edits - You can easily see who changed which part of the text.
+            %li Infinite undo - No limit to how far back in history you can go and rescue an old version of a text.
+            %li Extensible - You can easily change and extend the software with modules adding extra functionality.
 
-      #download
-        %ul
-          %li 
-            Download Etherpad
-            %img{ :src => "download.png", :alt => "image" }
-          %li
-            %a{ :href => "/" }
-              Latest stable package
-          %li
-            %a{ :href => "http://code.google.com/p/etherpad/source/checkout" }
-              Latest development repository
+        #download
+          %ul
+            %li 
+              Download Etherpad
+              %img{ :src => "download.png", :alt => "image" }
+            %li
+              %a{ :href => "/" }
+                Latest stable package
+            %li
+              %a{ :href => "http://code.google.com/p/etherpad/source/checkout" }
+                Latest development repository
+     
+        #etherpad-is
+          %h3 Etherpad is...
+          %p EtherPad is the only web-based word processor that allows people to work together in really real-time.
+          %p When multiple people edit the same document simultaneously, any changes are instantly reflected on everyone's screen. The result is a new and productive way to collaborate on text documents, useful for meeting notes, drafting sessions, education, team programming, and more.
 
-      #etherpad-is
-        %h3 Etherpad is...
-        %p EtherPad is the only web-based word processor that allows people to work together in really real-time.
-        %p When multiple people edit the same document simultaneously, any changes are instantly reflected on everyone's screen. The result is a new and productive way to collaborate on text documents, useful for meeting notes, drafting sessions, education, team programming, and more.
+        #using-etherpad
+          %h3 Using Etherpad...
+          %p Etherpad is both available as a software download that you can install on your own server, and as a Live! service that you can start using directly. If you chose to download and install Etherpad on your own server, you get the advantage of being able to customize the software and integrate it with the rest of your intranet solution.
 
-      #using-etherpad
-        %h3 Using Etherpad...
-        %p Etherpad is both available as a software download that you can install on your own server, and as a Live! service that you can start using directly. If you chose to download and install Etherpad on your own server, you get the advantage of being able to customize the software and integrate it with the rest of your intranet solution.
-
-      #licensing
-        %h3 Licensing...
-        %p 
-          Etherpad is
+        #licensing
+          %h3 Licensing...
+          %p 
+            Etherpad is
           %a{ :href => "http://www.gnu.org/philosophy/free-sw.html" } Free Software. 
           Various parts are licensed under Apache License 2.0, the BSD License, LGPL 2.1 and the GPL 2.0 licenses, respectively.
       

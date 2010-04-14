@@ -4,6 +4,7 @@
   %head
     %link{:rel=> "stylesheet", :href=>"/stylesheets/screen.css", :media=> "screen, projection", :type=> "text/css"}
     %link{:rel=> "stylesheet", :href=> "/stylesheets/print.css", :media=> "print", :type=>"text/css"}
+    %script{:type=> "text/javascript", :src=>"js/flowplayer-3.1.4.min.js"}  
     %title Etherpad Foundation
 
   %body
@@ -38,8 +39,12 @@
         
       #content
         #overview     
-          %object.flashvideo{ :data => "http://www.youtube.com/v/JpbT5H6-qr8", :type => "application/x-shockwave-flash" }
-            %param{ :name => "movie", :value => "http://www.youtube.com/v/JpbT5H6-qr8" }
+          %a#player{ :href => "Quick-Introduction-Etherpad.f4v", :style => "display:block;height:366px;" }
+          %script{ :language => "JavaScript" }
+            flowplayer("player", "swf/flowplayer-3.1.5.swf", { 
+            clip: { 
+            autoPlay: false,  
+            autoBuffering: true // <- do not place a comma here}});
         
         #features
           %h2 Features...

@@ -23,23 +23,29 @@
         #nav
           %ul
             %li
-              %a{ :href => "http://etherpad.org/plugins" } 
-                Plugins
-            %li
               %a{ :href => "http://doc.etherpad.org/" } 
                 Documentation
+            %li
+              %a{ :href => "http://doc.etherpad.org/lPXhn8pWYI" } 
+                Plugins
             %li
               %a{ :href => "http://groups.google.com/group/etherpad-open-source-discuss" }
                 Community
             %li
               %a{ :href => "http://groups.google.com/group/etherpad-dev" }
-                Dev community
+                Developers
             %li
-              %a{ :href => "http://demo.etherpad.org/" }
-                Demo
+              %a{ :href => "http://github.com/ether/pad" }
+                Source
             %li
-              %a{ :href => "http://live.etherpad.org/" }
-                Live!
+              %a{ :href => "http://github.com/ether/pad/issues" }
+                Issues
+            /%li
+            /  %a{ :href => "http://demo.etherpad.org/" }
+            /    Demo
+            /%li
+            /  %a{ :href => "http://live.etherpad.org/" }
+            /    Live!
         
       #content
         #overview     
@@ -56,13 +62,16 @@
           %ul
             %li 
               %h3 Realtime collaboration 
-              Changes show up simultaneously on all participants screens.
+              Changes show up simultaneously on all participants' screens.
             %li 
               %h3 Color-coded edits 
               You can easily see who changed which part of the text.
             %li 
               %h3 Infinite undo 
               No limit to how far back in history you can go and rescue an old version of a text.
+              %a{ :href => "http://etherpad.com/ep/blog/posts/saving-is-obsolete" }
+                More...
+              
             %li 
               %h3 Extensible 
               You can easily change and extend the software with modules adding extra functionality.
@@ -71,17 +80,14 @@
           %ul
             %li 
               Download Etherpad:
-            %li
-              %a{ :href => "/" }
-                Latest Stable Package
-            %li
-              %a{ :href => "http://code.google.com/p/etherpad/source/checkout" }
-                Latest Development Repository
+            %li#version
+              %a{ :href => "http://github.com/ether/pad/tarball/master" }
+                Latest
      
         #etherpad-is
           %h3 Etherpad Is
           %p EtherPad is the only web-based word processor that allows people to work together in really real-time.
-          %p When multiple people edit the same document simultaneously, any changes are instantly reflected on everyone's screen. The result is a new and productive way to collaborate on text documents, useful for meeting notes, drafting sessions, education, team programming, and more.
+          %p When multiple people edit the same document simultaneously, any changes are instantly reflected on all screens. The result is a new and productive way to collaborate on text documents, useful for meeting notes, drafting sessions, education, team programming, and more.
 
         #using-etherpad
           %h3 Using Etherpad
@@ -95,4 +101,6 @@
             Various parts are licensed under Apache License 2.0, the BSD License, LGPL 2.1 and the GPL 2.0 licenses, respectively.
       
       #footer
+        %a{ :href => "http://github.com/ether/web" }
+          Website
         &copy; 2010 Etherpad Foundation

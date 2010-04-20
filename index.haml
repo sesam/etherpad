@@ -15,11 +15,9 @@
     #container
       #header
         #title
-          %h1
-            %span.front> Etherpad
-            \.org
+          %h1.front Etherpad.org
 
-          %img{ :src => "logo.png", :alt => "Etherpad Logo", :width => "29"}
+          %img.logo{ :src => "logo.png", :alt => "Etherpad Logo", :width => "29"}
           %br
           %span.tag Live Collaborative Text
               
@@ -80,18 +78,30 @@
     
         #etherpad-explain
           #etherpad-is
-            %h3 Etherpad Is
-            %p EtherPad is the only web-based word processor that allows people to work together in really real-time.
-            %p When multiple people edit the same document simultaneously, any changes are instantly reflected on all screens. The result is a new and productive way to collaborate on text documents, useful for meeting notes, drafting sessions, education, team programming, and more.
+            %h3 What is Etherpad?
+            %p
+              EtherPad is the first web-based word processor that allows people to work together in really real-time.
+            %h3 Why use Etherpad?
+            %p
+              All editing of the document is instantly visible on the screens of all participating users,
+              enabling new and productive ways to collaborate on text documents.
+              Etherpad is useful for meeting notes, drafting sessions, education, team programming, and more.
 
           #using-etherpad
-            %h3 Using Etherpad
-            %p 
-              Etherpad is both available as a 
-              %a{ :href => "http://github.com/ether/pad/tarball/master" } software download 
-              that you can install on your own server, and as a Live! service that you can start using directly. If you chose to download and install Etherpad on your own server, you get the advantage of being able to customize the software and integrate it with the rest of your intranet solution.
+            %h3 Get started
+            %p
+              There are several free 
+              %a{ :href => "etherpadsites.html" } Etherpad services
+              which you can start using right now.
+              Or 
+              %a{ :href => "http://github.com/ether/pad/tarball/master" } download the software
+              and install Etherpad on your own web server and customize the style to fit in with your existing web pages.
 
           #licensing
+            %h3 Download
+            %p
+              %a{ :href => "http://github.com/ether/pad/tarball/master" } Latest version from github repo
+          
             %h3 Licensing
             %p 
               Etherpad is
